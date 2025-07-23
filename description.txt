@@ -1,0 +1,52 @@
+Job description
+Job Title: AI ML Engineer
+
+Location: Pune
+
+Year of experience- 5+
+
+About Company
+
+At Left Right Mind, we have the opportunity to discover, the liberty to question and the luxury to falter.
+
+We are perceptive, passionate, honest, and driven. We are a unique blend of conservative and
+
+contemporary. We function as a unit; each adding individual value and at the same time coercing
+
+each one of us to bring our best. We are what we create
+
+Job Overview:
+
+We are looking for an AI Engineer with a strong background in machine learning, deep learning, and
+
+AI-driven applications. You will be responsible for designing, developing, and deploying AI models,
+
+optimizing algorithms, and integrating LLMs into real-world applications. This role requires practical
+
+experience in AI/ML frameworks and the ability to work in a collaborative, fast-paced environment.
+
+Responsibilities:
+• Develop and deploy AI/ML models to address business challenges.
+• Optimize pre-trained large language models (LLMs) for specific use cases.
+• Implement machine learning pipelines, including data preprocessing, model training, and
+
+evaluation.
+• Work with structured and unstructured data to derive insights and improve model
+
+performance.
+• Collaborate with software engineers to integrate AI models into production systems.
+• Keep up to date with advancements in AI, ML, and LLM research.
+
+Required Qualifications:
+• Bachelor's or Master’s degree in Computer Science, Artificial Intelligence, or a related field.
+• 2+ years of experience working with AI/ML technologies.
+• Strong programming skills in Python and experience with ML libraries (TensorFlow, PyTorch,
+
+Scikit-learn, etc.).
+• Experience with LLMs (e.g., OpenAI GPT, Gemini, Claude) and NLP techniques.
+• Experience with Agentic frameworks like Langgraph, Autogen etc.
+• Familiarity with data preprocessing, feature engineering, and model deployment.
+• Understanding of cloud platforms (AWS, Azure, or GCP) and containerization (Docker,
+
+Kubernetes).
+• Strong problem-solving skills and ability to work in a collaborative team environment.

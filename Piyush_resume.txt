@@ -1,0 +1,45 @@
+Piyush Sahoo
+9148227303 |piyush.sahoo713@gmail.com |
+linkedin.com/in/piyush-sahoo |github.com/Piyush-sahoo
+Education
+PES University Bangalore
+B.Tech in Computer Science and Engineering CGPA: 8.63
+Geetanjali School Bangalore
+Grade 12: 93.8% Jun. 2020 – May 2022
+Orchids The International School Bangalore
+Grade 10: 92.2% Jun. 2015 – May 2020
+Technical Skills
+Languages : Java, Python, C/C++, SQL, JavaScript, HTML/CSS
+Libraries & Tools : pandas, NumPy, Matplotlib, LangChain, RAG (Retrieval-Augmented Generation), Large Language
+Models (LLMs), Semantic Scholar API, MongoDB, TensorFlow, scikit-learn, Crew AI, Langflow, OpenWebUI, PhiData,
+Hugging Face, Plotly, Keras
+Frameworks : React, Node.js, Flask, Express, FastAPI, Tailwind CSS
+Developer Tools : Git, GitHub, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
+Projects
+Research on Finding Research Gap May 2024 – Present
+•Conducted research on utilizing Large Language Models (LLMs) combined with LangChain to efficiently search and
+analyze academic research papers.
+•Implemented data-driven solutions to predict suitable AI models for datasets, enhancing model selection accuracy.
+PHOTON - A Personal Desktop Assistant Nov 2023 – Present
+•Developed a personal desktop assistant inspired by JARVIS, utilizing Groq and Llama model for task handling.
+•Implemented agent-based task management with tool invocation, developed modular tools for automation, and
+optimized vector storage for fast query handling.
+Blog Research and Writing Automation with CrewAI Nov 2023 – Present
+•Automated blog research and writing using CrewAI, integrating YouTube video content extraction and sequential
+task execution with agents.
+•Developed Blog Researcher and Blog Writer agents, optimizing content generation with memory, caching, and a
+YouTube tool for topic-based blog creation.
+Awards & Experience
+Founder July 2024 – Present
+Apna Meetup Bangalore
+•Organized free, hands-on technical workshops at various colleges across Bangalore.
+Intern April 2024 – August 2024
+CODMAV Bangalore
+•Contributed to machine learning research and development.
+1st Place in CodeChef’s Clash of Codes Hackathon April 2024
+PES University Bangalore
+Strengths
+•Problem Solving : Passionate about competitive programming and solving diverse problems.
+•Data Structures : Strong knowledge of various data structures.
+•Web Development : Skilled in frontend development with a passion for creating dynamic websites.
+•Public Speaking : Experienced and confident in delivering engaging presentations.

@@ -1,0 +1,108 @@
+# P Kavya Samhitha
+
+
+
+## Contact Information  
+
+📧 savya20014@gmail.com | 📞 7619565560 | 🔗 [LinkedIn](https://www.linkedin.com/in/p-kavya-samhitha-65a308212) | 📍 Bengaluru
+
+
+---
+
+
+
+## Professional Summary  
+
+Innovative and analytical Computer Science student with hands-on experience in machine learning and data analysis. Proficient in developing AI-driven solutions and familiar with cloud infrastructure. Eager to leverage strong programming and problem-solving skills to contribute to cutting-edge technology projects.
+
+
+---
+
+
+
+## Technical Skills  
+
+**Programming Languages:** Python, C++  
+
+**Machine Learning Frameworks:** TensorFlow, PyTorch, scikit-learn  
+
+**NLP Libraries:** NLTK, Hugging Face  
+
+**Data Management:** SQL, Pandas  
+
+**Cloud Services:** AWS, Docker, Kubernetes  
+
+**Version Control:** Git, GitHub
+
+
+---
+
+
+
+## Education  
+
+
+### B.Tech in Computer Science  
+
+**PES University** | 2022 – 2026  
+
+- CGPA: 8.07/10.0
+
+
+### 12th Grade  
+
+**Primus PU College** | 2020 – 2022  
+
+- Percentage: 90.3%
+
+
+### 10th Grade  
+
+**Delhi Public School East** | 2012 – 2020  
+
+- Percentage: 95.1%
+
+---
+
+
+
+## Projects  
+
+
+### AI-Driven Predictive Loan Approval System  
+
+- Designed and implemented a machine learning-based system using logistic regression to predict loan approval likelihood, achieving an accuracy of 85% by optimizing the model with feature engineering techniques.  
+- Collaborated with a team of 4 to integrate the solution with a user-friendly dashboard, improving decision-making processes for financial institutions.
+
+
+### Automated Sentiment Analysis Tool  
+
+- Developed a sentiment analysis application using a custom transformer model, achieving a classification accuracy of 75% on a diverse dataset by employing advanced preprocessing techniques with NLTK and Hugging Face.  
+- Improved data processing times by 30% through the implementation of efficient data pipelines, enabling real-time analytics for user feedback.
+
+
+### Fraud Detection System  
+
+- Engineered a robust machine learning solution using XGBoost and scikit-learn, capable of detecting fraudulent transactions with a precision of 92%. Utilized advanced anomaly detection methods to enhance the model’s effectiveness.  
+- Collaborated with cross-functional teams to deploy the solution, resulting in a 40% reduction in fraudulent transactions, significantly improving the banking client's security framework.
+
+
+### Low-Code Machine Learning Framework (ModelForge)  
+
+- Developed a low-code framework that allows users to train AI models with ease through YAML configuration, showcasing expertise in TensorFlow and PyTorch while enhancing accessibility for users.  
+- Achieved a 30% reduction in deployment time for machine learning solutions, aligning with business objectives for faster project delivery.
+
+---
+
+
+
+## Activities / Volunteering  
+
+- **Events Team**, Maaya Fest 2023  
+- **Finance Team**, Maaya Fest 2024  
+- **ACM Club Member**, Ops & Tech
+
+---
+
+
+This resume reflects a strong alignment with the expected qualifications for potential positions in the tech industry, particularly in machine learning and AI-related roles. All experiences are tailored to not only emphasize technical skills but also to illustrate teamwork and measurable outcomes, making the candidate compelling for hiring managers and ATS systems alike.

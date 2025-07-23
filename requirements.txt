@@ -1,0 +1,3 @@
+crewai
+PyPDF2
+PyInstaller

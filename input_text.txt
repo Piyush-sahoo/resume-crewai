@@ -1,0 +1,13 @@
+Your Name
+Contact Info | Location | Portfolio Link
+
+## Summary
+
+A brief summary about yourself.
+
+## Experience
+
+### Job Title | Company | Dates
+
+- Achievement 1
+- Achievement 2

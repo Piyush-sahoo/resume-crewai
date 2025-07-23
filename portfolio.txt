@@ -1,0 +1,73 @@
+Projects
+
+1. Chronicle - Real-Time Collaborative Markdown Editor
+
+Developed an open-source markdown editor with real-time collaboration features.
+
+Implemented WebSockets for instant updates across multiple users.
+
+Utilized React for the frontend and Node.js with Express for the backend.
+
+Integrated cloud storage for seamless document saving and retrieval.
+
+2. ModelForge - Low-Code Machine Learning Framework
+
+Built a framework that allows users to train ML models with simple YAML configuration files.
+
+Implemented support for transformers, RNNs, and traditional ML models.
+
+Used TensorFlow and PyTorch for model training and evaluation.
+
+Designed a modular preprocessing pipeline for text and numerical data.
+
+3. Sentiment Analysis Using Custom Transformer Model
+
+Created a transformer-based model for sentiment classification.
+
+Developed a data pipeline for text preprocessing using NLTK and Hugging Face.
+
+Optimized model training and inference to achieve 70%+ accuracy.
+
+4. Real Estate Management System
+
+Designed and implemented a database-driven real estate management platform.
+
+Developed RESTful APIs for CRUD operations on properties, agents, and users.
+
+Integrated PostgreSQL for efficient data storage and retrieval.
+
+Built dashboards for analytics and user interactions.
+
+5. Exchange Rate Prediction Using LMS Algorithm
+
+Developed a predictive model using the Least Mean Squares (LMS) algorithm.
+
+Extracted statistical features like mean, variance, and historical trends.
+
+Implemented real-time predictions using a time-series forecasting approach.
+
+6. Fraud Detection System
+
+Built a machine learning model to detect fraudulent transactions.
+
+Applied anomaly detection techniques using statistical and ML-based approaches.
+
+Used pandas, scikit-learn, and XGBoost for data analysis and model training.
+
+Technical Skills
+
+Programming: Python, Java, C++, JavaScript
+
+Frameworks: Spring Boot, React, TensorFlow, PyTorch
+
+Databases: PostgreSQL, MySQL, MongoDB
+
+Cloud & DevOps: Docker, Kubernetes, AWS, CI/CD
+
+Tools: Git, VSCode, Jupyter, Kafka
+
+Education
+
+[Bachelor’s/Master’s Degree in Computer Science or Relevant Field]
+[University Name] | [Year of Graduation]
+

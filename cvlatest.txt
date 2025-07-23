@@ -1,0 +1,62 @@
+1. Chronicle - Real-time Markdown Editor
+Built a collaborative markdown editor using Node.js, Express, WebSockets, and MongoDB. Enabled real-time text editing and formatting by multiple users. Front-end powered by React with Redux for state management. Integrated authentication, version control, and user presence indicators. Deployed on Heroku with persistent MongoDB Atlas integration.
+
+2. E-Store Dashboard
+Developed a responsive e-commerce dashboard using React and Tailwind CSS. Integrated product management, user analytics, and inventory tracking. Used Chart.js to visualize key performance indicators. Incorporated role-based access control for admin and staff users. Ensured mobile responsiveness and optimized load time.
+
+3. Library Management System
+Created RESTful APIs in Django for managing books, users, and loan records. Implemented token-based authentication and permission classes. Integrated email notifications for due dates and overdue returns. Used PostgreSQL for efficient data handling and indexing. Included an admin interface for bulk data operations.
+
+4. Smart Resume Analyzer
+Designed a resume analyzer using NLP techniques to parse and evaluate resumes. Leveraged spaCy to extract skills, education, and experience. Compared parsed data against job descriptions for fit percentage. Visualized gaps and strengths using matplotlib. Developed a web UI to upload and analyze documents.
+
+5. COVID-19 Data Dashboard
+Built a real-time dashboard with Plotly Dash to track global COVID-19 trends. Fetched data from external APIs and transformed it for visualization. Added interactive maps and graphs to compare country statistics. Performed regression analysis to predict infection spikes. Hosted on PythonAnywhere for public access.
+
+6. Bank Loan Prediction System
+Trained a classification model using logistic regression and decision trees. Preprocessed data with scikit-learn pipelines for clean inputs. Evaluated performance using accuracy, precision, and recall scores. Deployed as a Flask API and built a simple front-end to take input. Integrated logging for monitoring predictions.
+
+7. Network Packet Sniffer
+Created a packet sniffer in Python using Scapy to capture and analyze packets. Logged suspicious packet activity and flag anomalies in real time. Implemented a GUI with Tkinter for user interaction and logs. Added filters for TCP/UDP, port scanning, and IP address lookup. Tested on local and simulated networks.
+
+8. Secure File Transfer System
+Developed an AES-encrypted file transfer system over TCP sockets. Used RSA for secure key exchange and OTP for user authentication. Ensured data integrity using hashing techniques (SHA256). Built a client-server model with error handling and progress tracking. Useful for secure internal file transfers.
+
+9. IT Helpdesk Ticketing System
+Built a Django-based support ticket system for IT operations. Allowed users to raise, track, and close issues based on priority. Integrated email notifications for updates and escalations. Provided dashboards for admin and support staff to monitor load. Role-based access and data export features included.
+
+10. Wi-Fi Signal Strength Analyzer
+Used Python and pywifi to scan and log available Wi-Fi networks. Measured real-time signal strength and channel congestion. Visualized strength patterns using matplotlib. Generated periodic logs for offline analysis. Helpful in diagnosing connection issues in office setups.
+
+11. Cloud Storage Service Clone
+Created a Google Drive clone with file upload/download and preview options. Used AWS S3 for file storage and AWS Lambda for backend tasks. Enabled user authentication using Cognito. React-based front-end allowed drag-and-drop uploads. Implemented version control and file sharing links.
+
+12. Containerized Blog Platform
+Developed a full-stack blog app in Node.js and containerized it using Docker. Set up Docker Compose for multi-service orchestration. Integrated MongoDB as a service container. Deployed on AWS EC2 with Nginx as a reverse proxy. CI/CD pipeline set up via GitHub Actions.
+
+13. Kubernetes-based Microservices App
+Designed a shopping cart system with product, user, and order microservices. Containerized each service and deployed using Kubernetes on GCP. Implemented autoscaling and rolling updates. Monitored system health using Prometheus and visualized metrics in Grafana. Used Helm charts for deployment automation.
+
+14. AI-powered Chatbot
+Created a customer support chatbot using Hugging Face's Transformer models. Fine-tuned model on a custom FAQ dataset. Integrated it into a React front-end via Flask API. Supported contextual replies and multi-turn conversations. Hosted with auto-scaling support using AWS Lambda.
+
+15. Image Classification App
+Built a CNN model with TensorFlow trained on CIFAR-10 to classify images. Achieved over 85% accuracy with data augmentation and dropout. Developed a user-friendly Streamlit app for real-time image classification. Allowed drag-and-drop uploads and instant predictions. Deployed the model on Heroku.
+
+16. Real Estate Price Prediction
+Used linear regression and XGBoost to predict house prices from structured data. Conducted feature engineering to include location, area, and amenities. Handled missing data and outliers with preprocessing pipelines. Deployed model via Flask and created a form-based HTML interface. Added real-time prediction logging.
+
+17. Cloud-based CI/CD Pipeline
+Automated build-test-deploy pipeline for a Flask app using Jenkins and Docker. Integrated unit tests, flake8 linting, and code coverage reports. Used AWS EC2 for deployment and hosted the Jenkins server. Built Slack notifications for CI job status updates. Ensured rollback on test failure.
+
+18. Voice-controlled Home Automation
+Linked Google Assistant with Raspberry Pi for voice-based appliance control. Programmed using Python and interfaced GPIO pins for relay switching. Used IFTTT and Webhooks for communication. Enabled voice commands for lights, fans, and smart plugs. Deployed as a prototype for a smart room setup.
+
+19. Social Media Sentiment Analyzer
+Built a sentiment classifier using RoBERTa fine-tuned on tweet datasets. Scraped real-time tweets using Tweepy. Created visual dashboards in Dash showing sentiment trends. Supported hashtag and keyword-based filters. Helped identify public perception during major events.
+
+20. Vulnerability Scanner
+Designed a scanner that tests for OWASP top 10 vulnerabilities. Built test scripts for SQL injection, XSS, CSRF, and directory traversal. Provided a report with vulnerability scores and remediation tips. Added browser automation using Selenium for dynamic pages. Helpful for quick web app assessments.
+
+21. Slack Bot for IT Support
+Created a Python bot to respond to FAQs and IT queries on Slack. Connected with internal APIs to retrieve system info and raise tickets. Allowed users to reset passwords or request support with simple commands. Logged queries in Google Sheets for team analysis. Improved first-response times significantly.

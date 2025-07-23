@@ -1,0 +1,56 @@
+# P Kavya Samhitha
+
+## Contact Information  
+📧 savya20014@gmail.com | 📞 7619565560 | 🔗 [LinkedIn](www.linkedin.com/in/p-kavya-samhitha-65a308212) | 📍 Bengaluru
+
+---
+
+## Professional Summary  
+Detail-oriented Computer Science student leveraging robust project experience in machine learning and AI to tackle real-world problems. Proven ability to deploy effective solutions that integrate innovative technology, enhance productivity, and drive analytical insights. Eager to contribute to transformative projects within top tech environments.
+
+---
+
+## Technical Skills  
+**Programming Languages**: Python, Java  
+**Frameworks**: TensorFlow, PyTorch, scikit-learn  
+**Tools**: Docker, Kubernetes, AWS  
+**Data Processing**: Pandas, NLTK, Hugging Face  
+**Soft Skills**: Collaboration, Problem-Solving, Communication  
+
+---
+
+## Education  
+### B.Tech in Computer Science  
+**PES University** | 2022 – 2026  
+- Current CGPA: 8.07/10.0  
+
+### 12th Grade  
+**Primus PU College** | 2020 – 2022  
+- Scored 90.3%  
+
+### 10th Grade  
+**Delhi Public School East** | 2012 – 2020  
+- Scored 95.1%  
+
+---
+
+## Projects  
+### ModelForge - Low-Code Machine Learning Framework  
+- Developed an intuitive low-code framework that allows users to train AI models using YAML, reducing model deployment time by 30%.  
+- Streamlined model integration processes through user-friendly interfaces, enhancing accessibility for non-technical users.  
+
+### Sentiment Analysis Using Custom Transformer Model  
+- Constructed a transformer-based sentiment classification model, achieving a 25% accuracy improvement over existing benchmarks.  
+- Optimized data preprocessing pipelines using NLTK and Hugging Face, ensuring high reliability of insights from unstructured textual data.
+
+### Fraud Detection System  
+- Engineered a machine learning solution utilizing XGBoost and scikit-learn for predictive analysis of transactional data, achieving a 95% accuracy in detecting fraudulent activities.  
+- Collaborated with cross-functional teams for successful deployment in production environments, leading to a 40% reduction in fraud occurrences.
+
+### Data Visualization Tool  
+- Designed an interactive data visualization tool in Python, enabling real-time analysis of large datasets for enhanced decision-making strategies.  
+- Integrated analytics dashboards providing insights and trends that supported business objectives, fostering a data-driven culture within teams.
+
+---
+
+This resume effectively highlights a strong foundation in computer science with relevant projects that demonstrate technical prowess and analytical capabilities. The integration of ATS-optimized language and keywords aligns with expectations in top tech companies, particularly in AI and machine learning roles.

@@ -1,0 +1,42 @@
+Piyush Sahoo
+9148227303 |piyush.sahoo713@gmail.com |linkedin.com/in/piyush-sahoo |github.com/Piyush-sahoo
+Education
+Orchids The International School Bangalore
+Grade 10 - 92.2 Jun 2016 – May 2020
+Geetanjali School Bangalore
+Grade 12 - 93.8 Jun. 2020 – May 2022
+PES University Bangalore
+BTECH in CSE - CGPA: 8.56 Jun 2022 – 2026
+Awards & Experience
+Founder of Apna Meetup (Website) July 2024 – Present
+Organizing free, hands-on technical workshops at various colleges across Bangalore. Bangalore
+Intern at CODMAV (Website) April 2024 – Present
+Contributing to machine learning research and development. Bangalore
+1st Place in CodeChef’s Clash of Codes April 2024
+Hackathon @ PES University Bangalore
+Projects
+Research on Finding Research Gap |LLMs, RAG, Semantic Schloar May 2024 – Present∗Conducted research on utilizing Large Language Models (LLMs) combined with LangChain to efficiently search
+and analyze academic research papers and find their research gap.
+∗Implemented data-driven solutions to predict suitable AI models for given datasets, enhancing the accuracy of
+model selection and improving research workflows.
+Portfolio |React, Node, Tailwind CSS Nov 2023 – Present∗Developed a sleek and dynamic portfolio website using React, showcasing projects, skills, and experience.
+∗Utilized React libraries for enhanced UI/UX and interactivity, resulting in a user-friendly browsing experience.
+Electronics E-Commerce Website |MongoDB, ExpressJS, ReactJS, NodeJS Jun 2023 - Present∗Created an Electronics E-Commerce platform using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+∗Employed MongoDB to store user data securely and efficiently, ensuring scalability and flexibility for the
+application.
+Sorting Algorithm Visualizer |MongoDB, ExpressJS, ReactJS, NodeJS Jun 2023 - Present∗Developed a sorting algorithm visualizer utilizing the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+∗Implemented visualizations for various sorting algorithms such as merge sort, quick sort, bubble sort, and
+insertion sort, providing users with interactive tools to understand and observe sorting processes in real-time.
+Technical Skills
+Languages : Java, Python, C/C++, SQL, JavaScript, HTML/CSS, R
+Frameworks : React, Node.js, Flask, Express, FastAPI, Tailwind CSS
+Developer Tools : Git, GitHub, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
+Libraries & Tools : pandas, NumPy, Matplotlib, LangChain, RAG (Retrieval-Augmented Generation), Large Language
+Models (LLMs), Semantic Scholar API, MongoDB, TensorFlow, scikit-learn
+Machine Learning : Supervised/Unsupervised Learning, NLP, Model Prediction, Data Processing
+Strengths
+Problem Solving : Passionate about competitive programming and like to solve various kinds of problems.
+Data Structures : Have a pretty good knowledge about various kinds of data structures.
+Web Development : Passionate about web development (frontend) and have a pretty good knowledge about it.
+Public Speaking : Experienced and confident in public speaking, able to effectively communicate ideas and engage
+audiences.

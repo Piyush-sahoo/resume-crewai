@@ -1,0 +1,225 @@
+# GitHub Technical Portfolio Analysis for Left Right Mind
+
+## 🔟 Selected Repositories
+
+#### 🔹 Repo: [mattermost](https://github.com/kavspvt2803/mattermost)
+
+- **Role**: Owner
+- **Stack**: Go, React, PostgreSQL
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Mattermost is an open-source platform focused on secure collaboration and communication among development teams. It supports DevSecOps practices and offers features like flexible deployment options (on-premises or cloud), comprehensive documentation, and integration capabilities with APIs and plugins.
+
+2. **Technical Stack & Implementation**  
+   Built primarily with Go for the backend and React for the frontend, it utilizes PostgreSQL for data management. The platform can be deployed using Docker and Kubernetes, facilitating modern containerization practices.
+
+3. **Significance & Real-World Application**  
+   This tool is perfect for organizations prioritizing security in their communication strategy, making it valuable in industries like health tech and financial services where data security is paramount.
+
+4. **Code Quality & Maintenance**  
+   The repository possesses detailed documentation and contribution guidelines, demonstrating an active community and consistent updates, which are vital for long-term maintenance and user engagement.
+
+- **Key Resume Keywords**: `Go`, `React`, `PostgreSQL`, `Secure Collaboration`
+
+
+#### 🔹 Repo: [sentry](https://github.com/kavspvt2803/sentry)
+
+- **Role**: Owner
+- **Stack**: Python, JavaScript, Go
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Sentry is a robust error tracking and performance monitoring tool that allows developers to spot and fix errors in real-time, providing insights into application health.
+
+2. **Technical Stack & Implementation**  
+   The application supports multiple programming languages (Python, JavaScript) and utilizes web technologies for SDKs. It also integrates seamlessly with CI/CD workflows.
+
+3. **Significance & Real-World Application**  
+   Vital for developers in producing error-free applications, it enhances user satisfaction by minimizing downtime, making it especially relevant for fast-paced tech companies focused on continuous delivery.
+
+4. **Code Quality & Maintenance**  
+   Well-structured documentation and community support are evident, promoting ease of contribution and ongoing enhancements, thus reflecting a strong development lifecycle.
+
+- **Key Resume Keywords**: `Sentry`, `Error Tracking`, `Performance Monitoring`, `CI/CD Integration`
+
+
+#### 🔹 Repo: [operating-system](https://github.com/kavspvt2803/operating-system)
+
+- **Role**: Owner
+- **Stack**: Buildroot, Docker
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   This repository contains the Home Assistant Operating System, enabling seamless integration of home automation devices with a user-friendly interface.
+
+2. **Technical Stack & Implementation**  
+   Built using Buildroot for a lightweight Linux environment, it supports Docker for containerized application management.
+
+3. **Significance & Real-World Application**  
+   With growing trends in IoT, the operating system is significant for enhancing smart home management, suitable for industries involving home automation and smart infrastructures.
+
+4. **Code Quality & Maintenance**  
+   The repository showcases excellent documentation, user guides, and a clear structure that encourages contribution and maintenance by a dedicated user community.
+
+- **Key Resume Keywords**: `Linux`, `Docker`, `IoT`, `Home Automation`
+
+
+#### 🔹 Repo: [kanister](https://github.com/kavspvt2803/kanister)
+
+- **Role**: Owner
+- **Stack**: Kubernetes, Custom Resource Definitions (CRDs)
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Kanister provides a framework for managing data protection workflows in Kubernetes, focusing on simplifying backups and restoring data.
+
+2. **Technical Stack & Implementation**  
+   Utilizing Kubernetes' CRDs for declarative configurations, it integrates with observability tools for monitoring workflows.
+
+3. **Significance & Real-World Application**  
+   Particularly useful in cloud-native environments, it helps enterprises streamline data management and disaster recovery processes, crucial for sectors requiring high data availability.
+
+4. **Code Quality & Maintenance**  
+   The repository includes a comprehensive README and examples showcasing best practices, indicating rich community engagement and consistent maintenance.
+
+- **Key Resume Keywords**: `Kubernetes`, `Data Protection`, `DevOps`, `Disaster Recovery`
+
+
+#### 🔹 Repo: [rustdesk](https://github.com/kavspvt2803/rustdesk)
+
+- **Role**: Owner
+- **Stack**: Rust, Flutter
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   RustDesk is a remote desktop solution enabling secure access and control over machines, focusing on user privacy.
+
+2. **Technical Stack & Implementation**  
+   Built using Rust for performance and Flutter for cross-platform GUI, it allows users to deploy custom servers.
+
+3. **Significance & Real-World Application**  
+   Ideal for businesses needing secure remote access, especially in sectors with stringent data security requirements, like finance and healthcare.
+
+4. **Code Quality & Maintenance**  
+   The project is documented well, with clear setup instructions and community support for user engagement, ensuring active development.
+
+- **Key Resume Keywords**: `Rust`, `Remote Desktop`, `Security`, `Cross-platform`
+
+
+#### 🔹 Repo: [zammad](https://github.com/kavspvt2803/zammad)
+
+- **Role**: Owner
+- **Stack**: Ruby on Rails, Docker
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Zammad is a helpdesk and customer support platform specializing in managing diverse customer inquiries across various channels.
+
+2. **Technical Stack & Implementation**  
+   The backend is built with Ruby on Rails, while Docker ensures easy deployment and scalability.
+
+3. **Significance & Real-World Application**  
+   Valuable for customer-facing roles and organizations prioritizing efficient support systems, particularly in tech-driven sectors.
+
+4. **Code Quality & Maintenance**  
+   The repository offers thorough documentation and clear installation processes, with community engagement enhancing contributions and project health.
+
+- **Key Resume Keywords**: `Ruby`, `Customer Support`, `Helpdesk`, `Docker`
+
+
+#### 🔹 Repo: [netdata](https://github.com/kavspvt2803/netdata)
+
+- **Role**: Owner
+- **Stack**: C/C++, JavaScript
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Netdata is a real-time monitoring tool designed for visualizing infrastructure performance metrics and enhancing troubleshooting capabilities.
+
+2. **Technical Stack & Implementation**  
+   Utilizing C/C++ for performance-critical components and JavaScript for the web interface, it emphasizes automation and usability.
+
+3. **Significance & Real-World Application**  
+   Ideal for IT teams needing immediate visibility into system health, it aids in optimizing performance and mitigating downtime.
+
+4. **Code Quality & Maintenance**  
+   The project is actively maintained, with clear navigation and extensive documentation, reflecting a vibrant community.
+
+- **Key Resume Keywords**: `Monitoring`, `Real-time Metrics`, `System Health`, `C++`
+
+
+#### 🔹 Repo: [gitea](https://github.com/kavspvt2803/gitea)
+
+- **Role**: Owner
+- **Stack**: Go, JavaScript
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Gitea provides a self-hosted Git service that allows users to manage repositories independently, encouraging collaboration.
+
+2. **Technical Stack & Implementation**  
+   Written in Go, it offers a simple yet powerful interface, combined with a web-based dashboard for accessibility.
+
+3. **Significance & Real-World Application**  
+   Beneficial for teams looking to minimize third-party reliance, facilitating private source control for sensitive projects.
+
+4. **Code Quality & Maintenance**  
+   Good documentation and contribution guidelines support community involvement, ensuring a well-maintained codebase.
+
+- **Key Resume Keywords**: `Go`, `Git`, `Self-Hosted`, `Collaboration`
+
+
+#### 🔹 Repo: [dragonfly](https://github.com/kavspvt2803/dragonfly)
+
+- **Role**: Owner
+- **Stack**: Go, JavaScript
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   Dragonfly is a file distribution and image acceleration system designed for optimized cloud-native environments, using P2P technology.
+
+2. **Technical Stack & Implementation**  
+   Built with Go, it emphasizes state-of-the-art efficiency and security with features like block encryption.
+
+3. **Significance & Real-World Application**  
+   Ideal for cloud service providers and enterprises requiring efficient file distribution while minimizing bandwidth costs.
+
+4. **Code Quality & Maintenance**  
+   The documentation is thorough, and the community contributes to active development, showing dedication to long-term viability.
+
+- **Key Resume Keywords**: `Go`, `P2P`, `File Distribution`, `Cloud Native`
+
+
+#### 🔹 Repo: [cml](https://github.com/kavspvt2803/cml)
+
+- **Role**: Owner
+- **Stack**: Python
+- **Stars**: ⭐ 1 | **Forks**: 🍴 0 | **Last Updated**: 📆 09/2023
+
+1. **Main Purpose & Features**  
+   CML automates machine learning workflows, integrating model training, evaluation, and reporting into CI/CD processes.
+
+2. **Technical Stack & Implementation**  
+   Built on Python, it integrates with version control systems and uses GitFlow principles for effective management of ML experiments.
+
+3. **Significance & Real-World Application**  
+   An essential tool for data scientists aiming to streamline model development and deployment within agile frameworks.
+
+4. **Code Quality & Maintenance**  
+   The repository has detailed documentation and promotes community support through clear contribution guidelines.
+
+- **Key Resume Keywords**: `Machine Learning`, `Automation`, `CI/CD`, `Python`
+
+---
+
+## ✅ Resume Highlights
+
+- Developed [mattermost](https://github.com/kavspvt2803/mattermost) utilizing Go and React to enhance secure collaboration, supporting DevSecOps practices within organizations.
+- Created [sentry](https://github.com/kavspvt2803/sentry) to implement error tracking with Python, reducing application downtime through proactive performance monitoring.
+- Deployed the [Home Assistant Operating System](https://github.com/kavspvt2803/operating-system) using Docker, streamlining smart home management for enhanced user experience in IoT applications.
+- Implemented [kanister](https://github.com/kavspvt2803/kanister) to automate data protection workflows in Kubernetes, improving disaster recovery processes for cloud-native applications.
+- Designed [rustdesk](https://github.com/kavspvt2803/rustdesk) for secure remote desktop access, ensuring data privacy with a customized server deployment option.
+- Contributed to [gitea](https://github.com/kavspvt2803/gitea) to enable self-hosted Git service solutions, enhancing collaboration and data security in software development projects.
+- Integrated [CML](https://github.com/kavspvt2803/cml) in CI/CD pipelines for automated machine learning workflows, optimizing model training and evaluation processes.
+- Developed [dragonfly](https://github.com/kavspvt2803/dragonfly) software for efficient peer-to-peer file distribution, reducing resource utilization in cloud environments.

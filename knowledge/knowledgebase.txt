@@ -1,0 +1,416 @@
+Knowledge Base for ATS Agent, and builder agent 
+Job Categories Covered
+    Software Development (Front-end, Back-end, Full-stack)
+    Data Science and Analytics
+    Cybersecurity
+    IT Support and Networking
+    Cloud Computing
+    DevOps
+    AI and Machine Learning
+Keyword Priority Levels
+For each job category, the 50 keywords are split into:
+
+    Top Priority (20 keywords): Programming languages (e.g., Python, Java) and frameworks/tools (e.g., React, AWS). These are the most critical skills and carry the highest weight in scoring.
+    Medium Priority (15 keywords): Certifications (e.g., CISSP, AWS Certified Solutions Architect) and specialized skills. These have moderate importance.
+    Low Priority (15 keywords): Soft skills (e.g., communication, problem-solving). These are less critical and carry the lowest weight.
+
+ATS Scoring Mechanism
+    The ATS agent calculates a score based on the number of matching keywords found in the resume, with weights assigned to prioritize top priority keywords:
+
+        Top Priority Keywords: 3 points each
+        Medium Priority Keywords: 2 points each
+        Low Priority Keywords: 1 point each
+    The total score is the sum of points from matching keywords. For example, a resume with 5 top priority keywords (5 × 3 = 15), 3 medium priority keywords (3 × 2 = 6), and 2 low priority keywords (2 × 1 = 2) would score 15 + 6 + 2 = 23 points. You can normalize this to a percentage (e.g., out of a max score of 100) if desired.
+
+Feedback Mechanism
+    The ATS agent provides feedback by listing any missing top priority keywords from the resume. This helps candidates focus on adding the most critical skills to improve their score.
+
+1. Software Development (Front-end, Back-end, Full-stack)
+    Top Priority Keywords (20)
+        Python
+        Java
+        JavaScript
+        C#
+        Ruby
+        PHP
+        Swift
+        Kotlin
+        TypeScript
+        React
+        Angular
+        Vue.js
+        Node.js
+        Django
+        Flask
+        Spring Boot
+        .NET
+        REST APIs
+        SQL
+        Git
+
+
+
+
+    Medium Priority Keywords (15)
+        Oracle Certified Java Programmer
+        Microsoft Certified: Azure Developer Associate
+        AWS Certified Developer
+        Certified Scrum Developer
+        Google Associate Android Developer
+        CI/CD
+        Docker
+        Kubernetes
+        Jenkins
+        Agile Methodology
+        Test-Driven Development (TDD)
+        Microservices
+        GraphQL
+        NoSQL
+        OAuth
+
+
+    Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Teamwork
+        Adaptability
+        Time Management
+        Creativity
+        Attention to Detail
+        Leadership
+        Critical Thinking
+        Collaboration
+        Work Ethic
+        Interpersonal Skills
+        Project Management
+        Analytical Thinking
+        Customer Focus
+
+
+
+2. Data Science and Analytics
+    Top Priority Keywords (20)
+        Python
+        R
+        SQL
+        Pandas
+        NumPy
+        Scikit-learn
+        TensorFlow
+        PyTorch
+        Tableau
+        Power BI
+        Hadoop
+        Spark
+        Data Visualization
+        Machine Learning
+        Statistical Analysis
+        Data Wrangling
+        Big Data
+        A/B Testing
+        Natural Language Processing (NLP)
+        MATLAB
+    Medium Priority Keywords (15)
+        Certified Analytics Professional (CAP)
+        Google Data Analytics Professional Certificate
+        Microsoft Certified: Data Analyst Associate
+        AWS Certified Data Analytics
+        IBM Data Science Professional Certificate
+        Deep Learning
+        Predictive Modeling
+        Data Mining
+        ETL Processes
+        SAS
+        Apache Kafka
+        Time Series Analysis
+        Regression Analysis
+        Cloud Computing
+        Data Engineering
+    Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Critical Thinking
+        Attention to Detail
+        Teamwork
+        Creativity
+        Analytical Thinking
+        Adaptability
+        Time Management
+        Collaboration
+        Leadership
+        Work Ethic
+        Interpersonal Skills
+        Project Management
+        Presentation Skills
+3. Cybersecurity
+    Top Priority Keywords (20)
+        Ethical Hacking
+        Penetration Testing
+        Firewalls
+        Intrusion Detection Systems (IDS)
+        VPN
+        SIEM (Security Information and Event Management)
+        OWASP
+        Cryptography
+        Network Security
+        Endpoint Security
+        Threat Intelligence
+        Vulnerability Assessment
+        Incident Response
+        Malware Analysis
+        Security Protocols (e.g., SSL/TLS)
+        Kali Linux
+        Wireshark
+        Metasploit
+        Risk Management
+        Compliance (e.g., GDPR, HIPAA)
+    Medium Priority Keywords (15)
+        Certified Information Systems Security Professional (CISSP)
+        Certified Ethical Hacker (CEH)
+        Certified Information Security Manager (CISM)
+        CompTIA Security+
+        Certified Cloud Security Professional (CCSP)
+        Forensics
+        Identity and Access Management (IAM)
+        Security Auditing
+        SOC Analyst
+        Zero Trust Architecture
+        Blockchain Security
+        Cloud Security
+        DevSecOps
+        Phishing
+        Social Engineering
+    Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Teamwork
+        Adaptability
+        Attention to Detail
+        Critical Thinking
+        Leadership
+        Time Management
+        Analytical Thinking
+        Collaboration
+        Work Ethic
+        Interpersonal Skills
+        Creativity
+        Project Management
+        Customer Focus
+4. IT Support and Networking
+    Top Priority Keywords (20)
+        Troubleshooting
+        Network Configuration
+        Hardware Maintenance
+        Operating Systems (e.g., Windows, Linux)
+        TCP/IP
+        DNS
+        DHCP
+        Active Directory
+        VPN
+        Routers
+        Switches
+        Firewalls
+        Virtualization (e.g., VMware)
+        Cloud Services (e.g., AWS, Azure)
+        Scripting (e.g., PowerShell, Bash)
+        ITIL
+        Help Desk
+        Ticketing Systems (e.g., Jira)
+        Backup and Recovery
+        Remote Desktop
+    Medium Priority Keywords (15)
+        CompTIA A+
+        CompTIA Network+
+        Cisco Certified Network Associate (CCNA)
+        Microsoft Certified: Azure Administrator Associate
+        ITIL Foundation
+        Wireless Networking
+        VoIP
+        Network Security
+        Load Balancing
+        Subnetting
+        IPv6
+        SNMP
+        QoS (Quality of Service)
+        MPLS
+        SDN (Software-Defined Networking)
+    Low Priority Keywords (15)
+        Communication
+        Customer Service
+        Problem-solving
+        Time Management
+        Teamwork
+        Adaptability
+        Attention to Detail
+        Patience
+        Work Ethic
+        Interpersonal Skills
+        Leadership
+        Analytical Thinking
+        Collaboration
+        Project Management
+        Documentation
+5. Cloud Computing
+    Top Priority Keywords (20)
+        AWS
+        Microsoft Azure
+        Google Cloud Platform (GCP)
+        Infrastructure as Code (IaC)
+        Terraform
+        CloudFormation
+        Docker
+        Kubernetes
+        Serverless Architecture
+        Lambda Functions
+        Virtual Machines
+        Load Balancing
+        Auto Scaling
+        Cloud Security
+        DevOps
+        CI/CD
+        Microservices
+        SaaS
+        PaaS
+        IaaS
+    Medium Priority Keywords (15)
+        AWS Certified Solutions Architect
+        Microsoft Certified: Azure Solutions Architect Expert
+        Google Cloud Certified - Professional Cloud Architect
+        Certified Kubernetes Administrator (CKA)
+        AWS Certified DevOps Engineer
+        Cloud Migration
+        Hybrid Cloud
+        Multi-Cloud
+        Cloud Cost Management
+        Disaster Recovery
+        Cloud Monitoring
+        Identity and Access Management (IAM)
+        API Gateway
+        Big Data on Cloud
+        Machine Learning on Cloud
+Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Teamwork
+        Adaptability
+        Time Management
+        Collaboration
+        Leadership
+        Analytical Thinking
+        Project Management
+        Attention to Detail
+        Work Ethic
+        Interpersonal Skills
+        Creativity
+        Customer Focus
+        Strategic Thinking
+6. DevOps
+    Top Priority Keywords (20)
+        CI/CD
+        Jenkins
+        Git
+        Docker
+        Kubernetes
+        Ansible
+        Puppet
+        Chef
+        Terraform
+        Infrastructure as Code (IaC)
+        AWS
+        Azure
+        Google Cloud
+        Linux
+        Bash
+        Python
+        Monitoring (e.g., Prometheus, Grafana)
+        Log Management (e.g., ELK Stack)
+        Microservices
+        Agile Methodology
+    Medium Priority Keywords (15)
+        AWS Certified DevOps Engineer
+        Certified Kubernetes Administrator (CKA)
+        Docker Certified Associate
+        Microsoft Certified: Azure DevOps Engineer Expert
+        Google Cloud Certified - Professional DevOps Engineer
+        Blue-Green Deployment
+        Canary Releases
+        Chaos Engineering
+        Site Reliability Engineering (SRE)
+        GitOps
+        Container Orchestration
+        CloudFormation
+        Nagios
+        Splunk
+        Security Automation
+    Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Teamwork
+        Adaptability
+        Time Management
+        Collaboration
+        Leadership
+        Analytical Thinking
+        Project Management
+        Attention to Detail
+        Work Ethic
+        Interpersonal Skills
+        Creativity
+        Customer Focus
+        Strategic Thinking
+7. AI and Machine Learning
+    Top Priority Keywords (20)
+        Python
+        TensorFlow
+        PyTorch
+        Keras
+        Scikit-learn
+        Neural Networks
+        Deep Learning
+        Natural Language Processing (NLP)
+        Computer Vision
+        Reinforcement Learning
+        Supervised Learning
+        Unsupervised Learning
+        Data Preprocessing
+        Feature Engineering
+        Model Evaluation
+        Hyperparameter Tuning
+        Pandas
+        NumPy
+        MATLAB
+        Cloud AI Services (e.g., AWS SageMaker)
+    Medium Priority Keywords (15)
+        TensorFlow Developer Certificate
+        Microsoft Certified: Azure AI Engineer Associate
+        Google Cloud Certified - Professional Machine Learning Engineer
+        IBM Applied AI Professional Certificate
+        DeepLearning.AI Specialization
+        Generative Adversarial Networks (GANs)
+        Transfer Learning
+        Time Series Forecasting
+        Bayesian Networks
+        Explainable AI
+        AutoML
+        MLOps
+        Data Augmentation
+        Edge AI
+        Ethics in AI
+    Low Priority Keywords (15)
+        Communication
+        Problem-solving
+        Critical Thinking
+        Creativity
+        Analytical Thinking
+        Teamwork
+        Adaptability
+        Attention to Detail
+        Leadership
+        Collaboration
+        Work Ethic
+        Interpersonal Skills
+        Project Management
+        Presentation Skills
+        Strategic Thinking
+
+
