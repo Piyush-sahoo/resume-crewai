@@ -6,12 +6,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Check for required environment variables
-if not os.getenv("GROQ_API_KEY") or not os.getenv("OPENAI_API_KEY"):
-    raise EnvironmentError("GROQ_API_KEY and OPENAI_API_KEY must be set in your environment or .env file.")
+if not os.getenv("OPENAI_API_KEY"):
+    raise EnvironmentError("OPENAI_API_KEY must be set in your environment or .env file.")
 
-# Initialize LLMs
-groq_llm = LLM(model="groq/llama-3.3-70b-versatile")
-openai_llm = LLM(model="openai/gpt-4o-mini")
+# Initialize LLM
+openai_llm = LLM(model="openai/gpt-4.1")
 
 def run_final4_processing(job_description_file, company_file, github_profile_file, candidate_cv_file):
     """Runs the agent processing pipeline from final4.py.
@@ -51,10 +50,13 @@ def run_final4_processing(job_description_file, company_file, github_profile_fil
 
     # Define output file paths (using absolute paths for clarity)
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    jd_output_file = os.path.join(current_dir, 'agent_output__jd.txt')
-    company_output_file = os.path.join(current_dir, 'agent_output_company.txt')
-    github_output_file = os.path.join(current_dir, 'agent_output_github.txt')
-    cv_output_file = os.path.join(current_dir, 'agent_output_profile.txt')
+    # Define output file paths relative to the project root
+    output_dir = 'output'
+    os.makedirs(output_dir, exist_ok=True)
+    jd_output_file = os.path.join(output_dir, 'agent_output__jd.txt')
+    company_output_file = os.path.join(output_dir, 'agent_output_company.txt')
+    github_output_file = os.path.join(output_dir, 'agent_output_github.txt')
+    cv_output_file = os.path.join(output_dir, 'agent_output_profile.txt')
 
     # JD Analyzer Agent & Task
     jd_analyzer_agent = Agent(
@@ -98,7 +100,7 @@ def run_final4_processing(job_description_file, company_file, github_profile_fil
         role="Company Intelligence Agent",
         goal=f"Research {company_name}'s tech stack and culture using verified sources",
         verbose=True,
-        llm=groq_llm,
+        llm=openai_llm,
         backstory="Specializes in extracting accurate company data from public sources to help candidates tailor their applications effectively."
     )
     extract_employer_data_task = Task(
@@ -262,7 +264,7 @@ def run_final4_processing(job_description_file, company_file, github_profile_fil
         agents=[jd_analyzer_agent, employer_data_extraction_agent, github_analyzer_agent, cv_analyzer_agent],
         tasks=[analyze_jd_task, extract_employer_data_task, analyze_github_task, cv_analysis_task],
         process=Process.sequential,
-        llm=groq_llm
+        llm=openai_llm
     )
 
     # Execute the Crew

@@ -1,3 +1,7 @@
 crewai
 PyPDF2
 PyInstaller
+beautifulsoup4
+reportlab
+markdown
+streamlit

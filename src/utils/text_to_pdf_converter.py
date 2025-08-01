@@ -1,5 +1,6 @@
 import os
 import subprocess
+import sys
 
 # --- Configuration (can be overridden by function arguments) ---
 DEFAULT_INPUT_TEXT_FILE = 'agent_resume3.txt'  # Default if no path provided
@@ -61,10 +62,10 @@ def convert_text_to_pdf(input_text_file=DEFAULT_INPUT_TEXT_FILE,
     """
     current_dir = os.path.dirname(os.path.abspath(__file__))
     # Ensure paths are absolute or relative to the script's directory
-    input_text_file_abs = os.path.join(current_dir, input_text_file) if not os.path.isabs(input_text_file) else input_text_file
+    input_text_file_abs = os.path.join(current_dir, '..', '..', input_text_file) if not os.path.isabs(input_text_file) else input_text_file
     markdown_output_file_abs = os.path.join(current_dir, markdown_output_file) if not os.path.isabs(markdown_output_file) else markdown_output_file
     pdf_script_abs = os.path.join(current_dir, pdf_script) if not os.path.isabs(pdf_script) else pdf_script
-    pdf_output_file = os.path.splitext(markdown_output_file_abs)[0] + '.pdf'
+    pdf_output_file = os.path.join('output', os.path.splitext(os.path.basename(markdown_output_file))[0] + '.pdf')
 
     # 1. Read the input text
     try:
@@ -103,9 +104,10 @@ def convert_text_to_pdf(input_text_file=DEFAULT_INPUT_TEXT_FILE,
              
         # Run the script in the directory where it resides to handle relative paths within it
         script_dir = os.path.dirname(pdf_script_abs)
-        result = subprocess.run(['python', os.path.basename(pdf_script_abs)], 
-                                capture_output=True, text=True, check=True, 
-                                encoding='utf-8', cwd=script_dir)
+        python_executable = sys.executable
+        result = subprocess.run([python_executable, os.path.basename(pdf_script_abs)],
+                                 capture_output=True, text=True, check=True,
+                                 encoding='utf-8', cwd=script_dir)
                                 
         print("--- PDF Script Output ---")
         print(result.stdout)

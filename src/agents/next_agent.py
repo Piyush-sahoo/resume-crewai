@@ -12,9 +12,8 @@ load_dotenv()
 warnings.filterwarnings("ignore", category=UserWarning)
 from bs4 import BeautifulSoup
 
-# Initialize LLMs (can be done inside the function if preferred)
-groq_llm = LLM(model="groq/llama-3.3-70b-versatile")
-openai_llm = LLM(model="openai/gpt-4o-mini")
+# Initialize LLM (can be done inside the function if preferred)
+openai_llm = LLM(model="openai/gpt-4.1")
 
 # Merge text files utility
 def merge_text_files(file_list, output_file):
@@ -55,11 +54,14 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
         str: Path to the final generated resume text file, or None if an error occurs.
     """
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    merged_output_file = os.path.join(current_dir, 'merged_output.txt')
-    knowledgebase_path = os.path.join(current_dir, 'knowledge', knowledgebase_file)
+    knowledge_dir = os.path.join(current_dir, '..', 'knowledge')
+    os.makedirs(knowledge_dir, exist_ok=True)
+
+    merged_output_file = os.path.join(knowledge_dir, 'merged_output.txt')
+    knowledgebase_path = os.path.join(knowledge_dir, knowledgebase_file)
     final_resume_file = None # Initialize
 
-    # --- 1. Merge Input Files --- 
+    # --- 1. Merge Input Files ---
     input_files_to_merge = [
         final4_output_paths.get('jd_output'),
         final4_output_paths.get('company_output'),
@@ -77,15 +79,16 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
         print("Error: Failed to merge input files.")
         return None
 
-    # --- 2. Setup Knowledge Sources --- 
-    knowledge_files = [merged_output_file]
+    # --- 2. Setup Knowledge Sources ---
+    # Use relative paths as crewai's TextFileKnowledgeSource defaults to the 'knowledge' directory
+    knowledge_files_relative = ['merged_output.txt']
     if os.path.exists(knowledgebase_path):
-        knowledge_files.append(knowledgebase_path)
+        knowledge_files_relative.append(knowledgebase_file)
     else:
         print(f"Warning: Knowledgebase file not found at {knowledgebase_path}")
 
     try:
-        text_knowledge = TextFileKnowledgeSource(file_paths=knowledge_files)
+        text_knowledge = TextFileKnowledgeSource(file_paths=knowledge_files_relative)
     except Exception as e:
         print(f"Error initializing knowledge source: {e}")
         return None
@@ -110,14 +113,14 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
     )
 
     # --- 4. Define Tasks (dynamically inside the loop) --- 
-    def build_resume_task(resume_draft="", iteration=1):
-        output_filename = os.path.join(current_dir, f'agent_resume_iter_{iteration}.txt')
+    def build_resume_task(resume_draft="", iteration=1, ats_feedback=""):
+        output_filename = os.path.join('output', f'agent_resume_iter_{iteration}.txt')
         return Task(
             description=f"""
             Using the merged context (job description, company info, GitHub analysis, CV analysis) and the knowledgebase, generate a tailored resume draft.
             If previous ATS feedback is provided below, incorporate it to improve the resume:
             --- ATS Feedback ---
-            {resume_draft if resume_draft else 'No feedback yet.'}
+            {ats_feedback if ats_feedback else 'No feedback yet.'}
             --- End Feedback ---
             Generate iteration {iteration} of the resume.
             """,
@@ -167,7 +170,7 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
         print(f"\n🔁 Iteration {i} of {max_iterations} - Refining Resume...")
         
         # Create tasks for this iteration
-        resume_task = build_resume_task(resume_draft=ats_feedback, iteration=i)
+        resume_task = build_resume_task(resume_draft=ats_feedback, iteration=i, ats_feedback=ats_feedback)
         # Evaluation task needs the *output* of the resume task
         # We'll run resume task first, then create and run eval task
 
@@ -176,7 +179,7 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
             agents=[resume_builder_agent],
             tasks=[resume_task],
             process=Process.sequential,
-            llm=groq_llm, # Can use a different LLM if needed
+            llm=openai_llm, # Can use a different LLM if needed
             # planning=False # Keep it simple for sequential
         )
         
@@ -207,7 +210,7 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
             agents=[ats_agent],
             tasks=[eval_task],
             process=Process.sequential,
-            llm=groq_llm, # Can use a different LLM if needed
+            llm=openai_llm, # Can use a different LLM if needed
             # planning=False
         )
 
@@ -218,7 +221,7 @@ def run_next_agent_processing(final4_output_paths, knowledgebase_file="knowledge
             
             # Save final ATS report only after the last iteration
             if i == max_iterations:
-                ats_report_path = os.path.join(current_dir, "ats_final_report.txt")
+                ats_report_path = os.path.join('output', "ats_final_report.txt")
                 try:
                     with open(ats_report_path, "w", encoding="utf-8") as report:
                         report.write(ats_feedback)

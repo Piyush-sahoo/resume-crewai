@@ -2,9 +2,9 @@ import json
 import os
 import re
 from typing import Dict, Optional, Union
-from pdf_to_text import convert_pdf_to_text
-from github_scraper_new import get_user_repositories, get_repo_data, save_to_text
-from github_refiner_llm import read_github_data, parse_repositories, analyze_repository_with_llm, format_output
+from .pdf_to_text import convert_pdf_to_text
+from .github_scraper_new import get_user_repositories, get_repo_data, save_to_text
+from .github_refiner_llm import read_github_data, parse_repositories, analyze_repository_with_llm, format_output
 
 
 class InputValidator:

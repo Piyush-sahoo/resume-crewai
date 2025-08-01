@@ -77,7 +77,7 @@ class MarkdownToReportlab:
 
 def convert_markdown_to_pdf():
     markdown_file = 'resume.md'
-    output_file = str(Path(markdown_file).with_suffix('.pdf'))
+    output_file = os.path.join('..', '..', 'output', str(Path(markdown_file).with_suffix('.pdf')))
 
     if not os.path.exists(markdown_file):
         raise FileNotFoundError(f"Markdown file not found: {markdown_file}")

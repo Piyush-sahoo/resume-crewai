@@ -9,10 +9,12 @@ parent_dir = os.path.dirname(current_dir)
 imp_codes_dir = current_dir  # Define imp_codes_dir as the current directory
 sys.path.append(parent_dir)
 
-from input_validator import InputValidator
-from pdf_to_text import convert_pdf_to_text
-from github_scraper_new import get_user_repositories, get_repo_data, save_to_text
-from github_refiner_llm import read_github_data, parse_repositories, analyze_repository_with_llm, format_output
+from utils.input_validator import InputValidator
+from utils.pdf_to_text import convert_pdf_to_text
+from utils.github_scraper_new import get_user_repositories, get_repo_data, save_to_text
+from utils.github_refiner_llm import read_github_data, parse_repositories, analyze_repository_with_llm, format_output
+from agents.final4 import run_final4_processing
+from agents.next_agent import run_next_agent_processing
 
 # Initialize session state variables if they don't exist
 if 'validator' not in st.session_state:
@@ -78,7 +80,7 @@ if submitted:
         validator.inputs['job_description'] = job_description
         # Save job description to file
         if job_description.lower() != 'na':
-            job_description_file = os.path.join(imp_codes_dir, 'description.txt')
+            job_description_file = os.path.join('data', 'description.txt')
             with open(job_description_file, 'w', encoding='utf-8') as file:
                 file.write(job_description)
             st.session_state.job_description_file = job_description_file
@@ -90,7 +92,7 @@ if submitted:
     else:
         validator.inputs['company_name'] = company_name
         # Save company name to file
-        company_file = os.path.join(imp_codes_dir, 'company.txt')
+        company_file = os.path.join('data', 'company.txt')
         with open(company_file, 'w', encoding='utf-8') as file:
             file.write(company_name)
         st.success('Company name saved successfully!')
@@ -122,7 +124,7 @@ if submitted:
 
                             if all_repo_data:
                                 # Save GitHub data
-                                github_output_file = os.path.join(imp_codes_dir, 'output_github.txt')
+                                github_output_file = os.path.join('data', 'output_github.txt')
                                 save_to_text(all_repo_data, github_output_file)
                                 st.session_state.github_output_file = github_output_file
 
@@ -134,7 +136,7 @@ if submitted:
                                     enhanced_repo = analyze_repository_with_llm(repo)
                                     enhanced_repositories.append(enhanced_repo)
 
-                                refined_output_file = os.path.join(imp_codes_dir, 'refined_output_github_llm.txt')
+                                refined_output_file = os.path.join('data', 'refined_output_github_llm.txt')
                                 formatted_output = format_output(enhanced_repositories)
                                 with open(refined_output_file, 'w', encoding='utf-8') as file:
                                     file.write(formatted_output)
@@ -150,7 +152,7 @@ if submitted:
         with st.spinner('Processing CV...'):
             try:
                 # Save uploaded file
-                file_path = os.path.join(imp_codes_dir, cv_file.name)
+                file_path = os.path.join('data', cv_file.name)
                 with open(file_path, 'wb') as f:
                     f.write(cv_file.getbuffer())
 
@@ -204,3 +206,22 @@ if st.session_state.processing_complete:
     # Display collected inputs in JSON format
     st.subheader('Collected Data (JSON format)')
     st.json(st.session_state.validator.inputs)
+
+    if st.button('Generate Resume'):
+        with st.spinner('Running the resume generation pipeline...'):
+            final4_outputs = run_final4_processing(
+                job_description_file=st.session_state.job_description_file,
+                company_file=os.path.join('data', 'company.txt'),
+                github_profile_file=st.session_state.refined_output_file,
+                candidate_cv_file=st.session_state.cv_text_path
+            )
+
+            if final4_outputs:
+                final_resume_file = run_next_agent_processing(final4_outputs)
+                if final_resume_file:
+                    with open(final_resume_file, 'r', encoding='utf-8') as file:
+                        st.text_area('Final Resume', file.read(), height=600)
+                else:
+                    st.error('Resume generation failed.')
+            else:
+                st.error('Initial analysis failed.')
