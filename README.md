@@ -1,4 +1,4 @@
-# Adversarial Multi-Agent Framework for AI-Driven Resume Optimization
+# Adversarial Multi-Agent Framework for AI-Driven Resume Optimization Using Crewai
 
 This project presents a sophisticated AI system composed of multiple intelligent agents designed to generate highly tailored and optimized resumes. By leveraging a multi-agent architecture, advanced prompt engineering techniques, and an adversarial feedback loop, this framework helps users create resumes that are not only ATS-compliant but also perfectly aligned with specific job descriptions and company cultures.
 
